@@ -12,23 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :appointment_id %>
-    <%= form.number_field :appointment_id %>
-  </div>
-
-  <div class="field">
     <%= form.label :appointment_date %>
     <%= form.date_select :appointment_date %>
   </div>
 
   <div class="field">
     <%= form.label :physician_name_id %>
-    <%= form.text_field :physician_name_id %>
+    <%= form.collection_select :physician_name_id, Physician.all, :id, :physician_name %>
   </div>
 
   <div class="field">
     <%= form.label :patient_name_id %>
-    <%= form.text_field :patient_name_id %>
+    <%= form.collection_select :patient_name_id, Patient.all, :id, :patient_name%>
   </div>
 
   <div class="actions">
