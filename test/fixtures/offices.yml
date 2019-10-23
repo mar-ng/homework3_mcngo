@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  office_street_address: MyString
+  office_zip: 1
+  office_phone: 1
+
+two:
+  office_street_address: MyString
+  office_zip: 1
+  office_phone: 1

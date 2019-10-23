@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Physician name:</strong>
+  <%= @physician.physician_name %>
+</p>
+
+<p>
+  <strong>Physician specialty:</strong>
+  <%= @physician.physician_specialty %>
+</p>
+
+<p>
+  <ul>
+    <%  @physician.offices.each do |office| %>
+    <li><b>Office Street Address: </b><%= office.office_street_address%>
+    <li><b>Office Zip Code: </b><%= office.office_zip%>
+    <li><b>Office Phone: </b><%= office.office_phone%>
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_physician_path(@physician) %> |
+<%= link_to 'Back', physicians_path %>

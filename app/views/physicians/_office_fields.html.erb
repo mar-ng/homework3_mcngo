@@ -1,0 +1,15 @@
+<div class='nested-fields'>
+    <div class="field">
+      <%= f.label :office_street_address %>
+      <%= f.text_field :office_street_address %>
+    </div>
+    <div class="field">
+      <%= f.label :office_zip %>
+      <%= f.text_field :office_zip %>
+    </div>
+    <div class="field">
+      <%= f.label :office_phone %>
+      <%= f.text_field :office_phone %>
+    </div>
+    <%= link_to_remove_association "Remove Office", f %>
+  </div>
